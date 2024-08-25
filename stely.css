@@ -1,3 +1,181 @@
+
 .h1{
-    background-color: aquamarine;
+    background-color: rgb(24, 226, 159);
 }
+
+.p1{
+    background-color: rgb(243, 187, 102);
+    
+    border: 1;
+    padding: 10px;
+    display: flex;
+flex-wrap: wrap;
+
+
+    
+}
+.h1{
+    font-size: xx-large;
+    background-color: brown;
+    text-decoration-line: line-through;
+    text-align: center;
+         margin: 20%;
+    padding: 10px 10px 15px 15px;
+text-decoration-line: underline;
+vertical-align: top auto;
+    
+}
+.a1 {
+display: inline;
+flex-wrap: wrap ;
+justify-content: center;
+margin: 60px 10px 10px 10px;
+padding: 10px 10px 10px 10px;
+text-align: center;
+border: 1px;
+position: -ms-page;
+box-sizing: inherit;
+
+border: solid rgb(1, 9, 10) 2px ;
+width:20% ;
+    
+height: 20px ;
+
+padding: 10px ;
+
+
+display: inline-block;
+
+width: 20%;
+height: 50px;
+background-color: rgb(32, 176, 201);
+
+
+
+}
+.a2{
+    display: inline;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px 20px 20px 20px;
+    padding: 10px 10px 10px 10px;
+    
+    text-align: center;
+     border: 1px;
+    border: solid rgb(1, 9, 10) 2px ;
+    position: static;
+   
+
+    
+    width:20% ;
+    
+    height: 20px ;
+    
+    padding: 10px ;
+    
+    
+    display: inline-block;
+    
+    width: 20%;
+    height: 50px;
+    background-color: rgb(32, 176, 201);
+ 
+}
+
+.a3{
+    display: inline;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 150px 20px 20px 20px;
+    padding: 10px 10px 10px 10px;
+  
+    border: solid rgb(1, 9, 10) 2px ;
+    position: static;
+    text-align: center;
+    border: 1px;
+   
+
+    
+    width:20% ;
+    
+    height: 20px ;
+    
+    padding: 10px ;
+    
+    
+    display: inline-block;
+    
+    width: 20%;
+    height: 50px;
+    background-color: rgb(32, 176, 201);
+    
+}
+.a4{
+    background-image: url(452635024_1007888974370515_5557296786707087233_n.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-attachment: fixed;
+    position: initial;
+}
+body{
+    height: 2000px;
+}
+.wrapper{
+    display: inline-flex;
+    list-style: none;
+}
+.wrapper .icon {
+    position: relative;
+    background: #f1e9e9;
+    border-radius: 50%;
+    margin: 10px;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(3, 3, 3, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.wrapper .tooltip{
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #110404;
+    color: #ece2e2;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(236, 230, 230, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.668,-0.55,0.265,1.55);
+
+}
+.wrapper .tooltip ::before {
+    position:absolute ;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #584c4c;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);
+
+
+}
+.wrapper .icon:hover .tooltip {
+    top: -45px ;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(231, 213, 213, 0.1);
+}
+
